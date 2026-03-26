@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: goldenrod;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+    animation: pulsar 2s infinite ease-in-out;
+}
+
+h2 {
+    animation: piscar 2s infinite ease-in-out;
+    color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 3px goldenrod);
+    }
+    50% {
+        transform: scale(1.02);
+        filter: drop-shadow(0 0 8px goldenrod);
+    }
+}
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
